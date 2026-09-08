@@ -1,56 +1,104 @@
-# Welcome to your Expo app 👋
+DayLog:-
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+DayLog is a simple offline-first personal diary and daily activity tracking mobile application built with React Native and Expo.
 
-## Get started
+It allows users to record their daily thoughts, track their mood, manage activities, view entries on a calendar, and analyze their personal habits — all while keeping their data stored locally on the device.
 
-1. Install dependencies
+Features:
 
-   ```bash
-   npm install
-   ```
+Digital Diary:
+- Create diary entries
+- Add a title and personal thoughts
+- Select a mood
+- View individual entries
+- Edit existing entries
+- Delete entries
 
-2. Start the app
+Mood Tracking:
+- Five mood options
+- Mood displayed with diary entries
+- Today's mood shown on the Home dashboard
+- Mood statistics in Analytics
 
-   ```bash
-   npx expo start
-   ```
+Calendar:
+- Monthly calendar view
+- Days containing diary entries are marked
+- Select a date to view entries from that day
+- Open individual entries directly from the calendar
 
-In the output, you'll find options to open the app in a
+Activity Tracking:
+Track the time spent on different activities:
+- Study
+- Project
+- Exercise
+- Reading
+- Work
+- Other
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Activities can be added and deleted, with daily activity totals displayed on the Home screen.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Analytics:
+DayLog provides personal usage statistics including:
+- Total diary entries
+- Total words written
+- Total activity time
+- Writing streak
+- Mood overview
+- Activity breakdown
+- Weekly activity chart
+- Weekly diary chart
+- Personalized rule-based insights
 
-## Get a fresh project
+Dashboard:
+The Home screen provides a quick overview of the current day:
+- Dynamic greeting
+- Today's date
+- Current mood
+- Diary summary
+- Activity summary
+- Recent diary entries
+- Analytics shortcut
 
-When you're ready, run:
+Tech Stack:
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- AsyncStorage
+- React Native Calendars
+- Git & GitHub
 
-```bash
-npm run reset-project
-```
+Architecture:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+DayLog
+│
+├── Diary
+│   ├── Add Entry
+│   ├── View Entry
+│   ├── Edit Entry
+│   ├── Delete Entry
+│   └── Local Storage
+│
+├── Calendar
+│   ├── Monthly View
+│   ├── Entry Dates
+│   └── Date Filtering
+│
+├── Activities
+│   ├── Activity Types
+│   ├── Duration Tracking
+│   ├── Save Activity
+│   └── Delete Activity
+│
+├── Dashboard
+│   ├── Today's Mood
+│   ├── Entry Statistics
+│   ├── Word Count
+│   └── Activity Statistics
+│
+└── Analytics
+    ├── Mood Statistics
+    ├── Activity Breakdown
+    ├── Weekly Activity
+    ├── Weekly Diary
+    └── Writing Streak
